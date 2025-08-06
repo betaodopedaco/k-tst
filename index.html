@@ -30,13 +30,13 @@
     
     <!-- Pré-carregamento -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" as="style">
-    <link rel="preload" href="/css/styles.css" as="style">
+    <link rel="preload" href="styles.css" as="style">
     
     <!-- Fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -63,14 +63,14 @@
     <header class="header">
         <div class="container">
             <a href="https://www.magnologica.site/" class="logo">
-                <img src="/img/logo-magnologica.svg" alt="MagnoLogica - Criação de Sites Profissionais" width="180" height="40">
+                <img src="img/logo-magnologica.svg" alt="MagnoLogica - Criação de Sites Profissionais" width="180" height="40">
             </a>
             <nav aria-label="Menu principal">
                 <ul>
-                    <li><a href="https://www.magnologica.site/#servicos">Serviços</a></li>
-                    <li><a href="https://www.magnologica.site/portfolio">Portfólio</a></li>
-                    <li><a href="https://www.magnologica.site/blog">Blog</a></li>
-                    <li><a href="https://www.magnologica.site/#contato">Contato</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -81,7 +81,7 @@
         <div class="container">
             <h1>Criação de Sites Profissionais que Convertem</h1>
             <p class="subtitle">Soluções completas para <strong>transformação digital</strong> e <strong>captação de leads</strong> pela MagnoLogica.</p>
-            <a href="https://www.magnologica.site/#contato" class="cta-button">Solicitar Orçamento</a>
+            <a href="#contato" class="cta-button">Solicitar Orçamento</a>
         </div>
     </section>
 
@@ -92,17 +92,17 @@
             
             <div class="service-grid">
                 <article class="service-card">
-                    <img src="/img/criacao-sites.jpg" alt="Criação de Sites pela MagnoLogica" loading="lazy" width="400" height="300">
+                    <img src="img/criacao-sites.jpg" alt="Criação de Sites pela MagnoLogica" loading="lazy" width="400" height="300">
                     <h3>Criação de Sites</h3>
                     <p>Desenvolvemos <strong>sites profissionais</strong> otimizados para conversão e SEO.</p>
-                    <a href="https://www.magnologica.site/criacao-de-sites" class="service-link">Saiba mais →</a>
+                    <a href="criacao-de-sites.html" class="service-link">Saiba mais →</a>
                 </article>
                 
                 <article class="service-card">
-                    <img src="/img/seo.jpg" alt="Otimização para Google" loading="lazy" width="400" height="300">
+                    <img src="img/seo.jpg" alt="Otimização para Google" loading="lazy" width="400" height="300">
                     <h3>Colocar no Google</h3>
                     <p>Sua empresa na <strong>primeira página do Google</strong> em 30 dias.</p>
-                    <a href="https://www.magnologica.site/otimizacao-seo" class="service-link">Saiba mais →</a>
+                    <a href="otimizacao-seo.html" class="service-link">Saiba mais →</a>
                 </article>
             </div>
         </div>
@@ -121,7 +121,7 @@
                 </ul>
             </div>
             <div class="about-image">
-                <img src="/img/equipe-magnologica.jpg" alt="Equipe MagnoLogica" loading="lazy" width="600" height="400">
+                <img src="img/equipe-magnologica.jpg" alt="Equipe MagnoLogica" loading="lazy" width="600" height="400">
             </div>
         </div>
     </section>
@@ -132,17 +132,17 @@
             <h2>Trabalhos Recentes</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <img src="/img/portfolio1.jpg" alt="Site criado para restaurante em SP" loading="lazy" width="400" height="300">
+                    <img src="img/portfolio1.jpg" alt="Site criado para restaurante em SP" loading="lazy" width="400" height="300">
                     <h3>Restaurante Gourmet</h3>
                     <p>+150% aumento em reservas online</p>
                 </div>
                 <div class="portfolio-item">
-                    <img src="/img/portfolio2.jpg" alt="Portfólio para fotógrafo" loading="lazy" width="400" height="300">
+                    <img src="img/portfolio2.jpg" alt="Portfólio para fotógrafo" loading="lazy" width="400" height="300">
                     <h3>Portfólio Fotográfico</h3>
                     <p>15 novos clientes/mês</p>
                 </div>
             </div>
-            <a href="https://www.magnologica.site/portfolio" class="see-more">Ver todos os projetos →</a>
+            <a href="portfolio.html" class="see-more">Ver todos os projetos →</a>
         </div>
     </section>
 
@@ -150,7 +150,7 @@
     <section id="contato" class="contact">
         <div class="container">
             <h2>Pronto para Transformar seu Negócio?</h2>
-            <form action="https://www.magnologica.site/enviar" method="POST" class="contact-form">
+            <form action="#" method="POST" class="contact-form" id="contactForm">
                 <input type="text" name="nome" placeholder="Seu nome" required>
                 <input type="email" name="email" placeholder="Seu e-mail" required>
                 <textarea name="mensagem" placeholder="Como podemos ajudar?" required></textarea>
@@ -175,8 +175,8 @@
                 <div class="footer-col">
                     <h3>Links Rápidos</h3>
                     <ul>
-                        <li><a href="https://www.magnologica.site/politica-de-privacidade">Política de Privacidade</a></li>
-                        <li><a href="https://www.magnologica.site/termos">Termos de Serviço</a></li>
+                        <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="termos.html">Termos de Serviço</a></li>
                     </ul>
                 </div>
             </div>
@@ -188,7 +188,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="/js/main.js" defer></script>
+    <script src="main.js"></script>
     
     <!-- Monitoramento -->
     <!-- Google Analytics -->
@@ -202,5 +202,14 @@
     
     <!-- Bing UET -->
     <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"ID_DO_SITE"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+
+    <!-- Validação do Formulário -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Formulário enviado com sucesso! Entraremos em contato em breve.');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
