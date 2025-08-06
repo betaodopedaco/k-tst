@@ -1,4 +1,4 @@
-// script.js completo com responsividade
+// script.js completo com todas as correções
 document.addEventListener('DOMContentLoaded', function() {
     // Inicializa AOS apenas em desktop
     if (window.innerWidth >= 768) {
@@ -17,7 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function toggleMenu() {
         navLinks.classList.toggle('active');
-        mobileBackdrop.style.display = navLinks.classList.contains('active') ? 'block' : 'none';
+        if (mobileBackdrop) {
+            mobileBackdrop.style.display = navLinks.classList.contains('active') ? 'block' : 'none';
+        }
         document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
     }
 
@@ -216,5 +218,50 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         playerObserver.observe(videoPlayer);
+    }
+
+    // CORREÇÃO ESPECÍFICA PARA A SEÇÃO DE PORTFÓLIO
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    
+    // Garante que os itens sejam visíveis
+    portfolioItems.forEach(item => {
+        item.style.opacity = '1';
+        item.style.transform = 'none';
+    });
+    
+    // Adiciona clique para expandir no mobile
+    if (window.innerWidth <= 768) {
+        portfolioItems.forEach(item => {
+            item.addEventListener('click', function() {
+                // Remove a classe 'expanded' de todos os itens
+                portfolioItems.forEach(otherItem => {
+                    if (otherItem !== this) {
+                        otherItem.classList.remove('expanded');
+                        gsap.to(otherItem, {
+                            scale: 1,
+                            boxShadow: 'none',
+                            duration: 0.3
+                        });
+                    }
+                });
+                
+                // Alterna o item clicado
+                this.classList.toggle('expanded');
+                
+                if (this.classList.contains('expanded')) {
+                    gsap.to(this, {
+                        scale: 1.05,
+                        boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
+                        duration: 0.3
+                    });
+                } else {
+                    gsap.to(this, {
+                        scale: 1,
+                        boxShadow: 'none',
+                        duration: 0.3
+                    });
+                }
+            });
+        });
     }
 });
