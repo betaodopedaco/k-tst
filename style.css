@@ -145,7 +145,6 @@ h1, h2, h3, h4 {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    padding-top: 100px;
 }
 
 .hero-video-container {
@@ -163,7 +162,6 @@ h1, h2, h3, h4 {
     z-index: 2;
     padding: 0 2rem;
     max-width: 900px;
-    margin-top: 40px;
 }
 
 .hero-subtitle {
@@ -333,6 +331,7 @@ section {
     padding: 1.5rem;
 }
 
+/* MODIFICAÇÃO: Somente a imagem do "depois" */
 .portfolio-image-container {
     position: relative;
     height: 400px;
@@ -1025,53 +1024,6 @@ section {
     transform: translateY(50px);
 }
 
-/* Estilo para a seção "Guia Completo de Transformação Digital" */
-.knowledge-hub {
-    margin-top: 50px;
-    padding: 30px;
-    background: rgba(26, 26, 26, 0.5);
-    border-radius: 10px;
-    border: 1px solid rgba(212, 175, 55, 0.1);
-}
-
-.knowledge-hub h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: var(--gold);
-    text-align: center;
-}
-
-.knowledge-hub ul {
-    list-style: none;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.knowledge-hub li {
-    margin-bottom: 15px;
-    position: relative;
-    padding-left: 25px;
-}
-
-.knowledge-hub li:before {
-    content: "•";
-    color: var(--gold);
-    position: absolute;
-    left: 0;
-    font-size: 1.5rem;
-}
-
-.knowledge-hub a {
-    color: var(--gold);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-size: 1.1rem;
-}
-
-.knowledge-hub a:hover {
-    text-decoration: underline;
-}
-
 /* Responsive */
 @media (max-width: 992px) {
     .hero-title {
@@ -1112,10 +1064,6 @@ section {
     
     .portfolio-card {
         grid-template-columns: 1fr;
-    }
-    
-    .knowledge-hub {
-        padding: 20px;
     }
 }
 
